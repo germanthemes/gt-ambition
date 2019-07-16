@@ -44,36 +44,36 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: map-get($themeColors, --primary-color);
-	--secondary-color: map-get($themeColors, --secondary-color);
-	--accent-color: map-get($themeColors, --accent-color);
-	--highlight-color: map-get($themeColors, --highlight-color);
-	--light-gray-color: map-get($themeColors, --light-gray-color);
-	--gray-color: map-get($themeColors, --gray-color);
-	--dark-gray-color: map-get($themeColors, --dark-gray-color);
-	--link-color: map-get($themeColors, --link-color);
-	--link-hover-color: map-get($themeColors, --link-hover-color);
-	--button-color: map-get($themeColors, --button-color);
-	--button-text-color: map-get($themeColors, --button-text-color);
-	--button-hover-color: map-get($themeColors, --button-hover-color);
-	--button-hover-text-color: map-get($themeColors, --button-hover-text-color);
-	--header-background-color: map-get($themeColors, --header-background-color);
-	--header-text-color: map-get($themeColors, --header-text-color);
-	--header-text-hover-color: map-get($themeColors, --header-text-hover-color);
-	--header-border-color: map-get($themeColors, --header-border-color);
-	--title-color: map-get($themeColors, --title-color);
-	--title-hover-color: map-get($themeColors, --title-hover-color);
-	--footer-background-color: map-get($themeColors, --footer-background-color);
-	--footer-text-color: map-get($themeColors, --footer-text-color);
-	--footer-link-color: map-get($themeColors, --footer-link-color);
-	--footer-link-hover-color: map-get($themeColors, --footer-link-hover-color);
-	--text-font: map-get($themeFonts, --text-font);
-	--title-font: map-get($themeFonts, --title-font);
-	--title-font-weight: map-get($fontWeight, --title-font-weight);
-	--title-text-transform: map-get($textTransform, --title-text-transform);
-	--navi-font: map-get($themeFonts, --navi-font);
-	--navi-font-weight: map-get($fontWeight, --navi-font-weight);
-	--navi-text-transform: map-get($textTransform, --navi-text-transform);
+	--primary-color: #003344;
+	--secondary-color: #268f97;
+	--accent-color: #c9493b;
+	--highlight-color: #f9d26e;
+	--light-gray-color: #e4e4e4;
+	--gray-color: #848484;
+	--dark-gray-color: #242424;
+	--link-color: #268f97;
+	--link-hover-color: #242424;
+	--button-color: #268f97;
+	--button-text-color: #fff;
+	--button-hover-color: #242424;
+	--button-hover-text-color: #fff;
+	--header-background-color: #003344;
+	--header-text-color: rgba(255, 255, 255, 0.95);
+	--header-text-hover-color: rgba(255, 255, 255, 0.65);
+	--header-border-color: rgba(255, 255, 255, 0.1);
+	--title-color: #242424;
+	--title-hover-color: #268f97;
+	--footer-background-color: #003344;
+	--footer-text-color: #fff;
+	--footer-link-color: rgba(255, 255, 255, 0.6);
+	--footer-link-hover-color: #fff;
+	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--title-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--navi-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--title-font-weight: bold;
+	--navi-font-weight: normal;
+	--title-text-transform: none;
+	--navi-text-transform: none;
 }
 
 /*--------------------------------------------------------------
@@ -793,7 +793,7 @@ textarea {
 .site-title {
 	margin: 0;
 	padding: 0;
-	color: #f0f0f0;
+	color: rgba(255, 255, 255, 0.95);
 	color: var(--header-text-color);
 	text-decoration: none;
 	font-size: 24px;
@@ -809,13 +809,13 @@ textarea {
 
 .site-title a:link,
 .site-title a:visited {
-	color: #f0f0f0;
+	color: rgba(255, 255, 255, 0.95);
 	color: var(--header-text-color);
 }
 
 .site-title a:hover,
 .site-title a:active {
-	color: #c0c0c0;
+	color: rgba(255, 255, 255, 0.65);
 	color: var(--header-text-hover-color);
 }
 
@@ -823,7 +823,7 @@ textarea {
 	display: block;
 	margin: 0;
 	padding: 0;
-	color: #f0f0f0;
+	color: rgba(255, 255, 255, 0.95);
 	color: var(--header-text-color);
 	font-size: 13px;
 	font-size: 0.8125rem;
@@ -854,14 +854,14 @@ textarea {
 .main-navigation ul {
 	margin: 0;
 	padding: 0;
-	color: #f0f0f0;
+	color: rgba(255, 255, 255, 0.95);
 	color: var(--header-text-color);
 	list-style: none;
 	font-size: 16px;
 	font-size: 1rem;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--navi-font);
-	font-weight: bold;
+	font-weight: normal;
 	font-weight: var(--navi-font-weight);
 	text-transform: none;
 	text-transform: var(--navi-text-transform);
@@ -900,19 +900,19 @@ textarea {
 
 .main-navigation ul a:link,
 .main-navigation ul a:visited {
-	color: #f0f0f0;
+	color: rgba(255, 255, 255, 0.95);
 	color: var(--header-text-color);
 	text-decoration: none;
 }
 
 .main-navigation ul a:hover,
 .main-navigation ul a:active {
-	color: #c0c0c0;
+	color: rgba(255, 255, 255, 0.65);
 	color: var(--header-text-hover-color);
 }
 
 .main-navigation ul li.current-menu-item > a {
-	color: #c0c0c0;
+	color: rgba(255, 255, 255, 0.65);
 	color: var(--header-text-hover-color);
 	text-decoration: underline;
 }
@@ -949,14 +949,14 @@ textarea {
 	padding: 0.75rem;
 	border: none;
 	background: none;
-	color: #f0f0f0;
+	color: rgba(255, 255, 255, 0.95);
 	color: var(--header-text-color);
 	text-decoration: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--navi-font);
-	font-weight: bold;
+	font-weight: normal;
 	font-weight: var(--navi-font-weight);
 	text-transform: none;
 	text-transform: var(--navi-text-transform);
@@ -969,14 +969,14 @@ textarea {
 
 .menu-toggle:focus {
 	outline: thin dotted;
-	color: #f0f0f0;
+	color: rgba(255, 255, 255, 0.95);
 	color: var(--header-text-color);
 	background: none;
 }
 
 .menu-toggle:hover,
 .menu-toggle:active {
-	color: #c0c0c0;
+	color: rgba(255, 255, 255, 0.65);
 	color: var(--header-text-hover-color);
 	background: none;
 	cursor: pointer;
@@ -987,13 +987,13 @@ textarea {
 	width: 28px;
 	height: 28px;
 	vertical-align: top;
-	fill: #f0f0f0;
+	fill: rgba(255, 255, 255, 0.95);
 	fill: var(--header-text-color);
 }
 
 .menu-toggle:hover .icon,
 .menu-toggle:active .icon {
-	fill: #c0c0c0;
+	fill: rgba(255, 255, 255, 0.65);
 	fill: var(--header-text-hover-color);
 }
 
@@ -1018,7 +1018,7 @@ textarea {
 
 .dropdown-toggle:focus {
 	outline: thin dotted;
-	color: #f0f0f0;
+	color: rgba(255, 255, 255, 0.95);
 	color: var(--header-text-color);
 	background: none;
 }
@@ -1033,13 +1033,13 @@ textarea {
 	width: 20px;
 	height: 20px;
 	vertical-align: top;
-	fill: #f0f0f0;
+	fill: rgba(255, 255, 255, 0.95);
 	fill: var(--header-text-color);
 }
 
 .dropdown-toggle:hover .icon,
 .dropdown-toggle:active .icon {
-	fill: #c0c0c0;
+	fill: rgba(255, 255, 255, 0.65);
 	fill: var(--header-text-hover-color);
 }
 
@@ -1929,13 +1929,13 @@ object {
 		top: 0.1rem;
 		width: 14px;
 		height: 14px;
-		fill: #f0f0f0;
+		fill: rgba(255, 255, 255, 0.95);
 		fill: var(--header-text-color);
 	}
 
 	.main-navigation ul .menu-item-has-children > a:hover > .icon,
 	.main-navigation ul .page_item_has_children > a:hover > .icon {
-		fill: #c0c0c0;
+		fill: rgba(255, 255, 255, 0.65);
 		fill: var(--header-text-hover-color);
 	}
 

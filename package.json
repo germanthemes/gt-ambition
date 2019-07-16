@@ -22,7 +22,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
     "gulp-rtlcss": "^1.0.0",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^4.0.2",
     "gulp-stylelint": "^5.0.0",
     "gulp-uglify": "^3.0.0",
     "postcss-sorting": "^3.1.0",

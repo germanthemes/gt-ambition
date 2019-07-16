@@ -28,8 +28,8 @@ $themeColors: (
 	--button-hover-color      : #242424,
 	--button-hover-text-color : #fff,
 	--header-background-color : #003344,
-	--header-text-color       : #f0f0f0,
-	--header-text-hover-color : #c0c0c0,
+	--header-text-color       : rgba(255, 255, 255, 0.95),
+	--header-text-hover-color : rgba(255, 255, 255, 0.65),
 	--header-border-color     : rgba(255, 255, 255, 0.1),
 	--title-color             : #242424,
 	--title-hover-color       : #268f97,
@@ -51,7 +51,7 @@ $themeFonts: (
 // Font Weight.
 $fontWeight: (
 	--title-font-weight : bold,
-	--navi-font-weight  : bold,
+	--navi-font-weight  : normal,
 );
 
 // Text Transform.
