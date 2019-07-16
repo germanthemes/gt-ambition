@@ -1,15 +1,13 @@
 @media only screen and (min-width: 480px) {
-	.site-header,
+	.site-header {
+		padding: 1rem 1.5rem;
+	}
+
 	.site-content,
 	.footer-widgets-background,
 	.footer-copyright-background {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
-	}
-
-    .header-main {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
 	}
 
 	.site-content {
@@ -95,6 +93,10 @@
 }
 
 @media only screen and (min-width: 960px) {
+	.site-header {
+		padding: 1rem 2rem;
+	}
+
 	.entry-content > .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;

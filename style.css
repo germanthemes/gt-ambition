@@ -60,8 +60,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--header-background-color: #003344;
 	--header-text-color: rgba(255, 255, 255, 0.95);
 	--header-text-hover-color: rgba(255, 255, 255, 0.65);
-	--header-border-color: rgba(255, 255, 255, 0.1);
-	--title-color: #242424;
+	--title-color: #003344;
 	--title-hover-color: #268f97;
 	--footer-background-color: #003344;
 	--footer-text-color: #fff;
@@ -718,7 +717,10 @@ textarea {
 	overflow: hidden;
 }
 
-.site-header,
+.site-header {
+	padding: 1rem 1.25rem;
+}
+
 .site-content,
 .footer-widgets-background,
 .footer-copyright-background {
@@ -726,14 +728,12 @@ textarea {
 	padding-right: 1.25rem;
 }
 
-.header-main,
 .footer-main,
 .site-main {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.header-main,
 .footer-main {
 	max-width: 1200px;
 }
@@ -752,15 +752,11 @@ textarea {
 .site-header {
 	background-color: #003344;
 	background-color: var(--header-background-color);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid var(--header-border-color);
 }
 
 .header-main {
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 1.25rem;
-	padding-bottom: 1.25rem;
 }
 
 /* Site Branding */
@@ -1076,7 +1072,7 @@ textarea {
 .entry-title {
 	margin: 0;
 	padding: 0;
-	color: #242424;
+	color: #003344;
 	color: var(--title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
@@ -1093,7 +1089,7 @@ textarea {
 
 .entry-title a:link,
 .entry-title a:visited {
-	color: #242424;
+	color: #003344;
 	color: var(--title-color);
 	text-decoration: none;
 }
@@ -1693,17 +1689,15 @@ object {
 ## - Media Queries for Layout
 --------------------------------------------------------------*/
 @media only screen and (min-width: 480px) {
-	.site-header,
+	.site-header {
+		padding: 1rem 1.5rem;
+	}
+
 	.site-content,
 	.footer-widgets-background,
 	.footer-copyright-background {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
-	}
-
-	.header-main {
-		padding-top: 1.5rem;
-		padding-bottom: 1.5rem;
 	}
 
 	.site-content {
@@ -1789,6 +1783,10 @@ object {
 }
 
 @media only screen and (min-width: 960px) {
+	.site-header {
+		padding: 1rem 2rem;
+	}
+
 	.entry-content > .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;
