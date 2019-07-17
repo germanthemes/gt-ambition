@@ -5,7 +5,7 @@
 	}
 }
 
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 960px) {
 	.menu-toggle,
 	.dropdown-toggle {
 		display: none;
@@ -33,11 +33,21 @@
 		border-bottom: none;
 	}
 
-	.main-navigation ul a {
-		padding: 1rem 1.25rem;
+	.main-navigation > ul > li {
+		padding: 0.8rem 1rem;
+	}
+
+	.main-navigation > ul > li > a {
+		padding: 0.2rem 0;
 		border: none;
 	}
 
+	.main-navigation > ul > li.current-menu-item > a {
+		text-decoration: none;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+		border-bottom: 2px solid var(--header-text-hover-color);
+	}
+	
 	/* Dropdown Menus */
 	.main-navigation ul ul {
 		position: absolute;
@@ -45,16 +55,14 @@
 		top: 100%;
 		z-index: 99999;
 		padding: 0.5rem;
-		border: 1px solid rgba(0, 0, 0, 0.1);
-		border: 1px solid var(--header-border-color);
-		border-top: 4px solid #ff7755;
-		border-top: 4px solid var(--header-text-hover-color);
+		border: 2px solid rgba(255, 255, 255, 0.1);
+		border: 2px solid var(--header-border-color);
 	}
 
 	.main-navigation ul ul li:hover > ul,
 	.main-navigation ul ul li.focus > ul {
-		left: 100%;
-		right: auto;
+		right: 100%;
+		left: auto;
 	}
 
 	.main-navigation ul ul a {
@@ -63,8 +71,8 @@
 
 	.main-navigation ul li:hover > ul,
 	.main-navigation ul li.focus > ul {
-		left: 0;
-		right: auto;
+		right: 0;
+		left: auto;
 	}
 
 	.main-navigation ul ul ul {
@@ -76,7 +84,8 @@
 	.main-navigation ul ul a,
 	.main-navigation ul ul ul a,
 	.main-navigation ul ul ul ul a {
-		padding: 1rem 1.25rem;
+		padding: 1rem;
+		border: none;
 	}
 
 	/* Dropdown Icons */

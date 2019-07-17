@@ -1,15 +1,16 @@
 /* Theme Pagination */
 .pagination {
-	margin: 0 0 1.5rem;
+	margin: 0 0 1.25rem;
 	padding: 0;
-	@include font-size(15);
+	@include font-size(14);
+	font-weight: bold;
 }
 
 .pagination .page-numbers,
 .pagination .current {
 	display: inline-block;
-	margin: 0 1px 0 0;
-	padding: 0.35em 1em;
+	margin: 0 0.5em 0 0;
+	padding: 0.6em 1.2em;
 	text-align: center;
 	text-decoration: none;
 	@include color(--button-text-color);

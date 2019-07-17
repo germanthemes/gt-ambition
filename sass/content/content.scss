@@ -1,3 +1,7 @@
+.site-content {
+	padding-top: 1.25rem;
+}
+
 .type-post,
 .type-page,
 .type-attachment {
@@ -5,9 +9,15 @@
 	padding: 0;
 }
 
+.blog .type-post,
+.archive .type-post {
+	padding-bottom: 1.25rem;
+	border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
 /* Entry Header */
 .entry-header {
-	margin: 0 0 1rem;
+	margin-bottom: 1rem;
 }
 
 .entry-title {
@@ -16,7 +26,7 @@
 	@include color(--title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
-	@include font-size(28);
+	@include font-size(24);
 	@include font-family(--title-font);
 	@include font-weight(--title-font-weight);
 	@include text-transform(--title-text-transform);
@@ -36,7 +46,7 @@
 
 /* Entry Content */
 .entry-content {
-	@include font-size(18);
+	@include font-size(17);
 }
 
 .entry-content > .alignwide,
@@ -47,11 +57,10 @@
 }
 
 /* Featured Images */
-.wp-post-image {
-	margin: 0;
-	vertical-align: top;
+.post-image {
+	margin-bottom: 1rem;
 }
 
-.post-thumbnail {
-	margin-bottom: 1.5rem;
+.wp-post-image {
+	vertical-align: top;
 }

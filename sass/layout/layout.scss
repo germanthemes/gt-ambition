@@ -6,31 +6,25 @@
 	overflow: hidden;
 }
 
-.site-header {
-	padding: 1rem 1.25rem;
-}
-
-.site-content,
-.footer-widgets-background,
-.footer-copyright-background {
+.site-header,
+.site-footer,
+.site-content {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 }
 
+.header-main,
 .footer-main,
 .site-main {
 	margin-left: auto;
 	margin-right: auto;
 }
 
+.header-main,
 .footer-main {
 	max-width: $themeWidth;
 }
 
 .site-main {
 	max-width: $contentWidth;
-}
-
-.site-content {
-	padding-top: 1.25rem;
 }

@@ -36,9 +36,9 @@ input[type="search"],
 textarea {
 	padding: 0.3em 0.6em;
 	max-width: 100%;
-	border: 1px solid rgba(0,0,0,0.1);
-	background: #fff;
-	color: #666;
+	border: 2px solid rgba(0,0,0,0.1);
+	background: none;
+	color: #777;
 }
 
 input[type="text"]:focus,
@@ -47,7 +47,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-	border: 1px solid rgba(0,0,0,0.2);
+	border: 2px solid rgba(0,0,0,0.3);
 	color: $textColor;
 	outline: none;
 }
@@ -97,7 +97,7 @@ textarea {
 }
 
 .search-form .search-submit .icon-search {
-	margin: 4px 0 0;
+	margin: 5px 0 0;
 	width: 22px;
 	height: 22px;
 	@include fill(--button-text-color);

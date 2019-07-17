@@ -1,5 +1,7 @@
 .site-header {
 	@include background(--header-background-color);
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 
 .header-main {
@@ -40,9 +42,9 @@
 	@include color(--header-text-color);
 	text-decoration: none;
 	@include font-size(24);
-	@include font-family(--title-font);
-	@include font-weight(--title-font-weight);
-	@include text-transform(--title-text-transform);
+	@include font-family(--navi-font);
+	@include font-weight(--navi-font-weight);
+	@include text-transform(--navi-text-transform);
 	line-height: 1.4;
 }
 
@@ -66,14 +68,13 @@
 
 /* Custom Header Image */
 .header-image {
-	margin: -1px 0 0;
+	margin: 0;
 }
 
 .header-image img,
 .header-image .wp-post-image {
 	margin: 0;
 	width: 100%;
-	max-width: 1920px;
 	height: auto;
 	vertical-align: top;
 }

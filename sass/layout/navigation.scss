@@ -8,7 +8,7 @@
 	padding: 0;
 	@include color(--header-text-color);
 	list-style: none;
-	@include font-size(16);
+	@include font-size(17);
 	@include font-family(--navi-font);
 	@include font-weight(--navi-font-weight);
 	@include text-transform(--navi-text-transform);
@@ -40,8 +40,8 @@
 	display: block;
 	margin: 0;
 	padding: 1rem;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-top: 1px solid var(--header-border-color);
+	border-top: 2px solid rgba(255, 255, 255, 0.1);
+	border-top: 2px solid var(--header-border-color);
 	text-decoration: none;
 }
 
@@ -57,13 +57,12 @@
 }
 
 .main-navigation ul li.current-menu-item > a {
-	@include color(--header-text-hover-color);
 	text-decoration: underline;
 }
 
 /* Submenus */
 .main-navigation ul ul {
-	@include font-size(15);
+	@include font-size(16);
 	@include background(--header-background-color);
 }
 
@@ -88,7 +87,7 @@
 	display: block;
 	margin: 0;
 	margin-left: auto;
-	padding: 0.75rem;
+	padding: 1rem;
 	border: none;
 	background: none;
 	@include color(--header-text-color);

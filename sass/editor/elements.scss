@@ -1,7 +1,7 @@
 /* Typography */
 .editor-styles-wrapper {
 	@include font-family(--text-font);
-	@include font-size(18);
+	@include font-size(17);
     line-height: 1.75;
 	color: $textColor;
 }
@@ -10,6 +10,24 @@
 	font-size: inherit;
 	line-height: 1.75;
 	margin-bottom: 1.5em;
+}
+
+@media only screen and (min-width: 640px) {
+	.editor-styles-wrapper {
+		@include font-size(18);
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.editor-styles-wrapper {
+		@include font-size(19);
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.editor-styles-wrapper {
+		@include font-size(20);
+	}
 }
 
 .editor-styles-wrapper .mce-content-body {
@@ -58,27 +76,27 @@
 }
 
 .editor-styles-wrapper h1 {
-	@include font-size(32);
+	@include font-size(36);
 }
 
 .editor-styles-wrapper h2 {
-	@include font-size(26);
+	@include font-size(28);
 }
 
 .editor-styles-wrapper h3 {
-	@include font-size(22);
+	@include font-size(24);
 }
 
 .editor-styles-wrapper h4 {
-	@include font-size(20);
+	@include font-size(22);
 }
 
 .editor-styles-wrapper h5 {
-	@include font-size(19);
+	@include font-size(20);
 }
 
 .editor-styles-wrapper h6 {
-	@include font-size(18);
+	@include font-size(19);
 }
 
 /* Blockquotes */
