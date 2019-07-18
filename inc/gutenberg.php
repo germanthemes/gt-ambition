@@ -77,18 +77,23 @@ function gt_ambition_gutenberg_support() {
 		),
 		array(
 			'name' => esc_html_x( 'Medium', 'block font size', 'gt-ambition' ),
-			'size' => 20,
+			'size' => 24,
 			'slug' => 'medium',
 		),
 		array(
 			'name' => esc_html_x( 'Large', 'block font size', 'gt-ambition' ),
-			'size' => 24,
+			'size' => 36,
 			'slug' => 'large',
 		),
 		array(
 			'name' => esc_html_x( 'Extra Large', 'block font size', 'gt-ambition' ),
-			'size' => 36,
+			'size' => 48,
 			'slug' => 'extra-large',
+		),
+		array(
+			'name' => esc_html_x( 'Huge', 'block font size', 'gt-ambition' ),
+			'size' => 64,
+			'slug' => 'huge',
 		),
 	) ) );
 }
