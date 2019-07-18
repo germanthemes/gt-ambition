@@ -64,9 +64,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--title-color: #003344;
 	--title-hover-color: #268f97;
 	--footer-background-color: #003344;
-	--footer-text-color: #fff;
-	--footer-link-color: rgba(255, 255, 255, 0.6);
-	--footer-link-hover-color: #fff;
+	--footer-text-color: rgba(255, 255, 255, 0.5);
+	--footer-link-color: rgba(255, 255, 255, 0.95);
+	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
+	--footer-border-color: rgba(255, 255, 255, 0.1);
 	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--title-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--navi-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -719,22 +720,16 @@ textarea {
 }
 
 .site-header,
-.site-footer,
-.site-content {
+.site-content,
+.footer-main {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 }
 
 .header-main,
-.footer-main,
 .site-main {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.header-main,
-.footer-main {
-	max-width: 100%;
 }
 
 .site-main {
@@ -1235,7 +1230,9 @@ textarea {
 .site-footer {
 	padding-top: 1.5rem;
 	padding-bottom: 1px;
-	color: #fff;
+	font-size: 17px;
+	font-size: 1.0625rem;
+	color: rgba(255, 255, 255, 0.5);
 	color: var(--footer-text-color);
 	background-color: #003344;
 	background-color: var(--footer-background-color);
@@ -1243,13 +1240,13 @@ textarea {
 
 .site-footer a:link,
 .site-footer a:visited {
-	color: rgba(255, 255, 255, 0.6);
+	color: rgba(255, 255, 255, 0.95);
 	color: var(--footer-link-color);
 }
 
 .site-footer a:hover,
 .site-footer a:active {
-	color: #fff;
+	color: rgba(255, 255, 255, 0.5);
 	color: var(--footer-link-hover-color);
 }
 
@@ -1260,9 +1257,9 @@ textarea {
 .site-footer input[type="search"],
 .site-footer input[type="submit"],
 .site-footer textarea {
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border: 1px solid var(--footer-border-color);
-	color: #fff;
+	border: 2px solid rgba(255, 255, 255, 0.1);
+	border: 2px solid var(--footer-border-color);
+	color: rgba(255, 255, 255, 0.5);
 	color: var(--footer-link-hover-color);
 }
 
@@ -1272,7 +1269,7 @@ textarea {
 .site-footer input[type="password"]:focus,
 .site-footer input[type="search"]:focus,
 .site-footer textarea:focus {
-	color: #fff;
+	color: rgba(255, 255, 255, 0.5);
 	color: var(--footer-text-color);
 }
 
@@ -1283,9 +1280,11 @@ textarea {
 
 .footer-widgets .widget-title {
 	margin-top: 0;
-	margin-bottom: 1em;
-	font-size: 18px;
-	font-size: 1.125rem;
+	margin-bottom: 1.5rem;
+	color: rgba(255, 255, 255, 0.95);
+	color: var(--footer-link-color);
+	font-size: 20px;
+	font-size: 1.25rem;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-family: var(--navi-font);
 	font-weight: normal;
@@ -1304,8 +1303,6 @@ textarea {
 	padding-top: 1.25rem;
 	border-top: 2px solid rgba(255, 255, 255, 0.1);
 	border-top: 2px solid var(--footer-border-color);
-	font-size: 15px;
-	font-size: 0.9375rem;
 }
 
 .footer-copyright .widget {
@@ -1762,6 +1759,11 @@ object {
 		font-size: 16px;
 		font-size: 1rem;
 	}
+
+	.footer-widgets .widget-title {
+		font-size: 22px;
+		font-size: 1.375rem;
+	}
 }
 
 @media only screen and (min-width: 1280px) {
@@ -1798,8 +1800,8 @@ object {
 --------------------------------------------------------------*/
 @media only screen and (min-width: 480px) {
 	.site-header,
-	.site-footer,
-	.site-content {
+	.site-content,
+	.footer-main {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 	}
@@ -1836,14 +1838,14 @@ object {
 	.footer-widgets-columns {
 		display: flex;
 		flex-wrap: wrap;
-		margin-right: -1.5rem;
 	}
 
 	.footer-widget-column {
 		display: flex;
 		flex-grow: 1;
 		box-sizing: border-box;
-		padding-right: 1.5rem;
+		padding-left: 0.75rem;
+		padding-right: 0.75rem;
 		width: 50%;
 		flex-direction: column;
 	}
@@ -1858,8 +1860,8 @@ object {
 
 @media only screen and (min-width: 640px) {
 	.site-header,
-	.site-footer,
-	.site-content {
+	.site-content,
+	.footer-main {
 		padding-left: 1.75rem;
 		padding-right: 1.75rem;
 	}
@@ -1892,12 +1894,9 @@ object {
 	}
 
 	/* Footer Widgets */
-	.footer-widgets-columns {
-		margin-right: -2rem;
-	}
-
 	.footer-widget-column {
-		padding-right: 2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 
 	.footer-widgets .widget {
@@ -1921,8 +1920,8 @@ object {
 
 @media only screen and (min-width: 960px) {
 	.site-header,
-	.site-footer,
-	.site-content {
+	.site-content,
+	.footer-main {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
@@ -1955,12 +1954,9 @@ object {
 	}
 
 	/* Footer Widgets */
-	.footer-widgets-columns {
-		margin-right: -3rem;
-	}
-
 	.footer-widget-column {
-		padding-right: 3rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 	}
 
 	.footer-widgets .widget {
@@ -1968,13 +1964,13 @@ object {
 	}
 
 	.footer-copyright {
-		padding-top: 1.75rem;
-		margin-bottom: 1.75rem;
+		padding-top: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	.entry-content > .alignwide {
-		margin-left: -80px;
-		margin-right: -80px;
+		margin-left: -120px;
+		margin-right: -120px;
 		max-width: 1040px;
 	}
 }
@@ -1991,8 +1987,8 @@ object {
 
 @media only screen and (min-width: 1280px) {
 	.site-header,
-	.site-footer,
-	.site-content {
+	.site-content,
+	.footer-main {
 		padding-left: 2.25rem;
 		padding-right: 2.25rem;
 	}
@@ -2025,12 +2021,9 @@ object {
 	}
 
 	/* Footer Widgets */
-	.footer-widgets-columns {
-		margin-right: -4rem;
-	}
-
 	.footer-widget-column {
-		padding-right: 4rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 
 	.footer-widgets .widget {
@@ -2038,8 +2031,8 @@ object {
 	}
 
 	.footer-copyright {
-		padding-top: 2rem;
-		margin-bottom: 2rem;
+		padding-top: 2.5rem;
+		margin-bottom: 2.5rem;
 	}
 }
 

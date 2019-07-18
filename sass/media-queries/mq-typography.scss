@@ -47,6 +47,10 @@
 	.pagination {
 		@include font-size(16);
 	}
+
+	.footer-widgets .widget-title {
+		@include font-size(22);
+	}
 }
 
 @media only screen and (min-width: 1280px) {
