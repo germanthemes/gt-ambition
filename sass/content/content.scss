@@ -9,12 +9,6 @@
 	padding: 0;
 }
 
-.blog .type-post,
-.archive .type-post {
-	padding-bottom: 1.25rem;
-	border-bottom: 2px solid rgba(0,0,0,0.1);
-}
-
 /* Entry Header */
 .entry-header {
 	margin-bottom: 1rem;
@@ -57,10 +51,7 @@
 }
 
 /* Featured Images */
-.post-image {
-	margin-bottom: 1rem;
-}
-
 .wp-post-image {
 	vertical-align: top;
+	margin-bottom: 1rem;
 }

@@ -12,13 +12,10 @@
 	}
 
 	.entry-content {
-		@include font-size(18);
+		@include font-size(17);
 	}	
 
-	.entry-meta {
-		@include font-size(17);
-	}
-
+	.entry-meta,
 	.more-link,
 	.pagination {
 		@include font-size(15);
@@ -36,13 +33,10 @@
 	}
 
 	.entry-content {
-		@include font-size(19);
-	}
-
-	.entry-meta {
 		@include font-size(18);
 	}
 
+	.entry-meta,
 	.more-link,
 	.pagination {
 		@include font-size(16);
@@ -59,13 +53,10 @@
 	}
 
 	.entry-content {
-		@include font-size(20);
-	}
-
-	.entry-meta {
 		@include font-size(19);
 	}
 
+	.entry-meta,
 	.more-link,
 	.pagination {
 		@include font-size(17);
