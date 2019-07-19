@@ -53,8 +53,8 @@ if ( ! function_exists( 'gt_ambition_header_image' ) ) :
 	 */
 	function gt_ambition_header_image() {
 
-		// Display featured image as header image on single posts and pages.
-		if ( is_singular() && has_post_thumbnail() ) :
+		// Display featured image as header image on single pages.
+		if ( is_page() && has_post_thumbnail() ) :
 			?>
 
 			<div id="headimg" class="header-image featured-header-image">
@@ -117,23 +117,34 @@ if ( ! function_exists( 'gt_ambition_search_header' ) ) :
 endif;
 
 
-if ( ! function_exists( 'gt_ambition_post_thumbnail' ) ) :
+if ( ! function_exists( 'gt_ambition_post_image' ) ) :
 	/**
-	 * Displays the featured image on archive posts.
+	 * Displays the featured image.
 	 */
-	function gt_ambition_post_thumbnail() {
+	function gt_ambition_post_image() {
 		if ( ! has_post_thumbnail() ) {
 			return;
 		}
-		?>
 
-		<div class="post-thumbnail">
-			<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
+		if ( is_singular() ) :
+			?>
+
+			<figure class="post-image post-image-single">
 				<?php the_post_thumbnail(); ?>
-			</a>
-		</div>
+			</figure>
 
-		<?php
+			<?php
+		else :
+			?>
+
+			<figure class="post-image post-image-archives">
+				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark" aria-hidden="true">
+					<?php the_post_thumbnail(); ?>
+				</a>
+			</figure>
+
+			<?php
+		endif;
 	}
 endif;
 

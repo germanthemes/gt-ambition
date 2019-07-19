@@ -11,6 +11,8 @@
 
 	<header class="post-header entry-header">
 
+		<?php gt_ambition_post_image(); ?>
+
 		<?php the_title( '<h1 class="post-title entry-title">', '</h1>' ); ?>
 
 		<?php gt_ambition_entry_meta(); ?>
