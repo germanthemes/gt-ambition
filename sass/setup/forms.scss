@@ -3,12 +3,12 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	margin: 0;
-	padding: 0.5em 1em;
-	border: none;
-	@include color(--button-text-color);
-	@include background(--button-color);
+	padding: 0.6em 1.2em;
+	background: none;
+	@include color(--button-color);
+	border: 2px solid currentColor;
 	text-decoration: none;
-	font-weight: normal;
+	font-weight: bold;
 	@include font-size(15);
 }
 
@@ -24,8 +24,8 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	@include color(--button-hover-text-color);
-	@include background(--button-hover-color);
+	@include color(--button-hover-color);
+	text-decoration: none;
 }
 
 input[type="text"],
@@ -59,12 +59,13 @@ textarea {
 /* Search Form */
 /* Theme Search Widget */
 .search-form {
-	position: relative;
-	display: block;
-	overflow: hidden;
+	display: flex;
 	margin: 0;
 	padding: 0;
-	width: 100%;
+}
+
+.search-form label {
+	flex-grow: 1;
 }
 
 .search-form .screen-reader-text {
@@ -75,35 +76,20 @@ textarea {
 	display: inline-block;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0.5em 1.5em 0.5em 0.7em;
+	padding: 0.6em 1em;
 	min-width: 150px;
 	width: 100%;
 	-webkit-appearance: none;
 }
 
 .search-form .search-submit {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
+	display: flex;
+	margin-left: 0.5rem;
 	padding: 0.6em 0.8em;
-	border: none;
-	@include background(--button-color);
-}
-
-.search-form .search-submit:hover,
-.search-form .search-submit:active {
-	@include background(--button-hover-color);
 }
 
 .search-form .search-submit .icon-search {
-	margin: 5px 0 0;
 	width: 22px;
 	height: 22px;
-	@include fill(--button-text-color);
-}
-
-.search-form .search-submit:hover .icon-search,
-.search-form .search-submit:active .icon-search {
-	@include fill(--button-hover-text-color);
+	fill: currentColor;
 }

@@ -543,14 +543,13 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	margin: 0;
-	padding: 0.5em 1em;
-	border: none;
-	color: #fff;
-	color: var(--button-text-color);
-	background-color: #268f97;
-	background-color: var(--button-color);
+	padding: 0.6em 1.2em;
+	background: none;
+	color: #268f97;
+	color: var(--button-color);
+	border: 2px solid currentColor;
 	text-decoration: none;
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -567,10 +566,9 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	color: #fff;
-	color: var(--button-hover-text-color);
-	background-color: #003344;
-	background-color: var(--button-hover-color);
+	color: #003344;
+	color: var(--button-hover-color);
+	text-decoration: none;
 }
 
 input[type="text"],
@@ -605,12 +603,13 @@ textarea {
 
 /* Theme Search Widget */
 .search-form {
-	position: relative;
-	display: block;
-	overflow: hidden;
+	display: flex;
 	margin: 0;
 	padding: 0;
-	width: 100%;
+}
+
+.search-form label {
+	flex-grow: 1;
 }
 
 .search-form .screen-reader-text {
@@ -621,41 +620,22 @@ textarea {
 	display: inline-block;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0.5em 1.5em 0.5em 0.7em;
+	padding: 0.6em 1em;
 	min-width: 150px;
 	width: 100%;
 	-webkit-appearance: none;
 }
 
 .search-form .search-submit {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
+	display: flex;
+	margin-left: 0.5rem;
 	padding: 0.6em 0.8em;
-	border: none;
-	background-color: #268f97;
-	background-color: var(--button-color);
-}
-
-.search-form .search-submit:hover,
-.search-form .search-submit:active {
-	background-color: #003344;
-	background-color: var(--button-hover-color);
 }
 
 .search-form .search-submit .icon-search {
-	margin: 5px 0 0;
 	width: 22px;
 	height: 22px;
-	fill: #fff;
-	fill: var(--button-text-color);
-}
-
-.search-form .search-submit:hover .icon-search,
-.search-form .search-submit:active .icon-search {
-	fill: #fff;
-	fill: var(--button-hover-text-color);
+	fill: currentColor;
 }
 
 /*--------------------------------------------------------------
@@ -1259,6 +1239,30 @@ textarea {
 .site-footer textarea:focus {
 	color: rgba(255, 255, 255, 0.5);
 	color: var(--footer-text-color);
+}
+
+.site-footer button,
+.site-footer input[type="button"],
+.site-footer input[type="reset"],
+.site-footer input[type="submit"] {
+	color: rgba(255, 255, 255, 0.95);
+	color: var(--footer-link-color);
+}
+
+.site-footer button:hover,
+.site-footer input[type="button"]:hover,
+.site-footer input[type="reset"]:hover,
+.site-footer input[type="submit"]:hover,
+.site-footer button:focus,
+.site-footer input[type="button"]:focus,
+.site-footer input[type="reset"]:focus,
+.site-footer input[type="submit"]:focus,
+.site-footer button:active,
+.site-footer input[type="button"]:active,
+.site-footer input[type="reset"]:active,
+.site-footer input[type="submit"]:active {
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--footer-link-hover-color);
 }
 
 /* Footer Widgets */
