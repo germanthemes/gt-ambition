@@ -41,7 +41,7 @@
 .site-footer input[type="button"],
 .site-footer input[type="reset"],
 .site-footer input[type="submit"] {
-	@include color(--footer-link-color);
+	@include color(--footer-link-hover-color);
 }
 
 .site-footer button:hover,
@@ -56,7 +56,7 @@
 .site-footer input[type="button"]:active,
 .site-footer input[type="reset"]:active,
 .site-footer input[type="submit"]:active {
-	@include color(--footer-link-hover-color);
+	@include color(--footer-border-color);
 }
 
 /* Footer Widgets */

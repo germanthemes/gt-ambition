@@ -1245,8 +1245,8 @@ textarea {
 .site-footer input[type="button"],
 .site-footer input[type="reset"],
 .site-footer input[type="submit"] {
-	color: rgba(255, 255, 255, 0.95);
-	color: var(--footer-link-color);
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--footer-link-hover-color);
 }
 
 .site-footer button:hover,
@@ -1261,8 +1261,8 @@ textarea {
 .site-footer input[type="button"]:active,
 .site-footer input[type="reset"]:active,
 .site-footer input[type="submit"]:active {
-	color: rgba(255, 255, 255, 0.5);
-	color: var(--footer-link-hover-color);
+	color: rgba(255, 255, 255, 0.1);
+	color: var(--footer-border-color);
 }
 
 /* Footer Widgets */
