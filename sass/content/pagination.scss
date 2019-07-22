@@ -10,11 +10,11 @@
 .pagination .current {
 	display: inline-block;
 	margin: 0 0.5em 0 0;
-	padding: 0.6em 1.2em;
+	padding: 0.3em 0.9em;
 	text-align: center;
 	text-decoration: none;
-	@include color(--button-text-color);
-	@include background(--button-color);
+	@include color(--button-color);
+	border: 2px solid currentColor;
 }
 
 .pagination .page-numbers.dots {
@@ -24,6 +24,5 @@
 .pagination .current,
 .pagination a:hover,
 .pagination a:active {
-	@include color(--button-hover-text-color);
-	@include background(--button-hover-color);
+	@include color(--button-hover-color);
 }

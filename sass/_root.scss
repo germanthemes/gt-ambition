@@ -9,9 +9,7 @@
 	@include variable(--link-color, $themeColors);
 	@include variable(--link-hover-color, $themeColors);
 	@include variable(--button-color, $themeColors);
-	@include variable(--button-text-color, $themeColors);
 	@include variable(--button-hover-color, $themeColors);
-	@include variable(--button-hover-text-color, $themeColors);
 	@include variable(--header-background-color, $themeColors);
 	@include variable(--header-text-color, $themeColors);
 	@include variable(--header-text-hover-color, $themeColors);
