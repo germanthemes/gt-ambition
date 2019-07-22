@@ -112,26 +112,22 @@
 	/* Header Color Option */
 	wp.customize( 'gt_ambition_theme_options[header_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color, border_color;
+			var text_color, hover_color, border_color;
 
-			if( isColorDark( newval ) ) {
-				text_color = '#ffffff';
-				border_color = 'rgba(255, 255, 255, 0.1)';
-			} else {
-				text_color = '#242424';
+			if( isColorLight( newval ) ) {
+				text_color = 'rgba(0, 0, 0, 0.95)';
+				hover_color = 'rgba(0, 0, 0, 0.5)';
 				border_color = 'rgba(0, 0, 0, 0.1)';
+			} else {
+				text_color = 'rgba(255, 255, 255, 0.95)';
+				hover_color = 'rgba(255, 255, 255, 0.5)';
+				border_color = 'rgba(255, 255, 255, 0.1)';
 			}
 
 			document.documentElement.style.setProperty( '--header-background-color', newval );
 			document.documentElement.style.setProperty( '--header-text-color', text_color );
+			document.documentElement.style.setProperty( '--header-text-hover-color', hover_color );
 			document.documentElement.style.setProperty( '--header-border-color', border_color );
-		} );
-	} );
-
-	/* Navigation Color Option */
-	wp.customize( 'gt_ambition_theme_options[navi_color]', function( value ) {
-		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--header-text-hover-color', newval );
 		} );
 	} );
 

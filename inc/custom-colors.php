@@ -108,15 +108,11 @@ class GT_Ambition_Custom_Colors {
 			$color_variables .= '--header-background-color: ' . $theme_options['header_color'] . ';';
 
 			// Check if a light background color was chosen.
-			if ( self::is_color_dark( $theme_options['header_color'] ) ) {
-				$color_variables .= '--header-text-color: #ffffff;';
-				$color_variables .= '--header-border-color: rgba(255, 255, 255, 0.1);';
+			if ( self::is_color_light( $theme_options['header_color'] ) ) {
+				$color_variables .= '--header-text-color: rgba(0, 0, 0, 0.95);';
+				$color_variables .= '--header-text-hover-color: rgba(0, 0, 0, 0.5);';
+				$color_variables .= '--header-border-color: rgba(0, 0, 0, 0.1);';
 			}
-		}
-
-		// Set Navigation Color.
-		if ( $theme_options['navi_color'] !== $default['navi_color'] ) {
-			$color_variables .= '--header-text-hover-color: ' . $theme_options['navi_color'] . ';';
 		}
 
 		// Set Title Color.
