@@ -59,6 +59,7 @@ function gt_ambition_default_options() {
 		'gray_color'         => '#848484',
 		'dark_gray_color'    => '#242424',
 		'link_color'         => '#268f97',
+		'link_hover_color'   => '#003344',
 		'header_color'       => '#003344',
 		'navi_color'         => '#ffffff',
 		'title_color'        => '#003344',

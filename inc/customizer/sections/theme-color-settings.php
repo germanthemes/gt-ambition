@@ -38,6 +38,22 @@ function gt_ambition_customize_register_theme_color_settings( $wp_customize ) {
 		)
 	) );
 
+	// Add Link Hover Color setting.
+	$wp_customize->add_setting( 'gt_ambition_theme_options[link_hover_color]', array(
+		'default'           => $default['link_hover_color'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_hex_color',
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control(
+		$wp_customize, 'gt_ambition_theme_options[link_hover_color]', array(
+			'label'    => esc_html_x( 'Link Hover', 'Color Option', 'gt-ambition' ),
+			'section'  => 'gt_ambition_section_theme_colors',
+			'settings' => 'gt_ambition_theme_options[link_hover_color]',
+			'priority' => 20,
+		)
+	) );
+
 	// Add Header Color setting.
 	$wp_customize->add_setting( 'gt_ambition_theme_options[header_color]', array(
 		'default'           => $default['header_color'],
@@ -50,7 +66,7 @@ function gt_ambition_customize_register_theme_color_settings( $wp_customize ) {
 			'label'    => esc_html_x( 'Header', 'Color Option', 'gt-ambition' ),
 			'section'  => 'gt_ambition_section_theme_colors',
 			'settings' => 'gt_ambition_theme_options[header_color]',
-			'priority' => 20,
+			'priority' => 30,
 		)
 	) );
 
@@ -66,7 +82,7 @@ function gt_ambition_customize_register_theme_color_settings( $wp_customize ) {
 			'label'    => esc_html_x( 'Navigation', 'Color Option', 'gt-ambition' ),
 			'section'  => 'gt_ambition_section_theme_colors',
 			'settings' => 'gt_ambition_theme_options[navi_color]',
-			'priority' => 30,
+			'priority' => 40,
 		)
 	) );
 
@@ -82,7 +98,7 @@ function gt_ambition_customize_register_theme_color_settings( $wp_customize ) {
 			'label'    => esc_html_x( 'Titles', 'Color Option', 'gt-ambition' ),
 			'section'  => 'gt_ambition_section_theme_colors',
 			'settings' => 'gt_ambition_theme_options[title_color]',
-			'priority' => 40,
+			'priority' => 50,
 		)
 	) );
 
@@ -98,7 +114,7 @@ function gt_ambition_customize_register_theme_color_settings( $wp_customize ) {
 			'label'    => esc_html_x( 'Title Hover', 'Color Option', 'gt-ambition' ),
 			'section'  => 'gt_ambition_section_theme_colors',
 			'settings' => 'gt_ambition_theme_options[title_hover_color]',
-			'priority' => 50,
+			'priority' => 60,
 		)
 	) );
 
@@ -114,7 +130,7 @@ function gt_ambition_customize_register_theme_color_settings( $wp_customize ) {
 			'label'    => esc_html_x( 'Footer Widgets', 'Color Option', 'gt-ambition' ),
 			'section'  => 'gt_ambition_section_theme_colors',
 			'settings' => 'gt_ambition_theme_options[footer_color]',
-			'priority' => 60,
+			'priority' => 70,
 		)
 	) );
 }

@@ -96,17 +96,16 @@
 	/* Link Color Option */
 	wp.customize( 'gt_ambition_theme_options[link_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color;
-
-			if( isColorLight( newval ) ) {
-				text_color = '#242424';
-			} else {
-				text_color = '#ffffff';
-			}
-
 			document.documentElement.style.setProperty( '--link-color', newval );
 			document.documentElement.style.setProperty( '--button-color', newval );
-			document.documentElement.style.setProperty( '--button-text-color', text_color );
+		} );
+	} );
+
+	/* Link Color Hover Option */
+	wp.customize( 'gt_ambition_theme_options[link_hover_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--link-hover-color', newval );
+			document.documentElement.style.setProperty( '--button-hover-color', newval );
 		} );
 	} );
 

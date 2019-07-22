@@ -95,11 +95,12 @@ class GT_Ambition_Custom_Colors {
 		if ( $theme_options['link_color'] !== $default['link_color'] ) {
 			$color_variables .= '--link-color: ' . $theme_options['link_color'] . ';';
 			$color_variables .= '--button-color: ' . $theme_options['link_color'] . ';';
+		}
 
-			// Check if a light background color was chosen.
-			if ( self::is_color_light( $theme_options['link_color'] ) ) {
-				$color_variables .= '--button-text-color: #242424;';
-			}
+		// Set Link Hover Color.
+		if ( $theme_options['link_hover_color'] !== $default['link_hover_color'] ) {
+			$color_variables .= '--link-hover-color: ' . $theme_options['link_hover_color'] . ';';
+			$color_variables .= '--button-hover-color: ' . $theme_options['link_hover_color'] . ';';
 		}
 
 		// Set Header Color.
