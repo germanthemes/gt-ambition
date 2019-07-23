@@ -78,11 +78,11 @@ add_action( 'after_setup_theme', 'gt_ambition_setup' );
 function gt_ambition_content_width() {
 
 	// Default content width.
-	$content_width = 720;
+	$content_width = 800;
 
 	// Fullwidth content width.
 	if ( is_page() && 'fullwidth' === get_post_meta( get_the_ID(), 'gt_page_layout', true ) ) {
-		$content_width = 1200;
+		$content_width = 1280;
 	}
 
 	// Set global variable for content width.
@@ -185,42 +185,8 @@ add_action( 'widgets_init', 'gt_ambition_widgets_init' );
 
 
 /**
- * Set up automatic theme updates.
- *
- * @return void
- */
-function gt_ambition_theme_updater() {
-	if ( '' !== gt_ambition_get_option( 'license_key' ) ) :
-
-		// Setup the updater.
-		$theme_updater = new GT_Ambition_Theme_Updater(
-			array(
-				'remote_api_url' => GT_AMBITION_STORE_API_URL,
-				'version'        => '1.1',
-				'license'        => trim( gt_ambition_get_option( 'license_key' ) ),
-				'item_id'        => GT_AMBITION_PRODUCT_ID,
-				'item_name'      => 'GT Ambition',
-				'theme_slug'     => 'gt-ambition',
-				'author'         => 'GermanThemes',
-			),
-			array(
-				'update-notice'    => __( "Updating this theme will lose any customizations you have made. 'Cancel' to stop, 'OK' to update.", 'gt-ambition' ),
-				'update-available' => __( '<strong>%1$s %2$s</strong> is available. <a href="%3$s" class="thickbox" title="%4$s">Check out what\'s new</a> or <a href="%5$s"%6$s>update now</a>.', 'gt-ambition' ),
-			)
-		);
-
-	endif;
-}
-add_action( 'admin_init', 'gt_ambition_theme_updater', 0 );
-
-
-/**
  * Include Files
  */
-
-// Include Admin Classes.
-require get_template_directory() . '/inc/admin/license-key.php';
-require get_template_directory() . '/inc/admin/theme-updater.php';
 
 // Include Customizer Options.
 require get_template_directory() . '/inc/customizer/customizer.php';
