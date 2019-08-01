@@ -52,7 +52,8 @@
 }
 
 .main-navigation ul a:hover,
-.main-navigation ul a:active {
+.main-navigation ul a:active,
+.main-navigation ul a:focus {
 	@include color(--header-text-hover-color);
 }
 
@@ -146,6 +147,7 @@
 	right: 0;
 	padding: 1.1rem 1.5rem;
 	background: none;
+	border: none;
 }
 
 .dropdown-toggle:focus {
@@ -168,7 +170,8 @@
 }
 
 .dropdown-toggle:hover .icon,
-.dropdown-toggle:active .icon {
+.dropdown-toggle:active .icon,
+.dropdown-toggle:focus .icon {
 	@include fill(--header-text-hover-color);
 }
 
