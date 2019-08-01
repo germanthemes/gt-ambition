@@ -107,7 +107,12 @@ if ( ! function_exists( 'gt_ambition_search_header' ) ) :
 
 		<header class="search-header entry-header">
 
-			<h1 class="search-title entry-title"><?php printf( esc_html__( 'Search Results for: %s', 'gt-ambition' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<h1 class="search-title entry-title">
+				<?php
+				// translators: Search Results title.
+				printf( esc_html__( 'Search Results for: %s', 'gt-ambition' ), '<span>' . get_search_query() . '</span>' );
+				?>
+			</h1>
 			<?php get_search_form(); ?>
 
 		</header><!-- .search-header -->
@@ -201,6 +206,7 @@ if ( ! function_exists( 'gt_ambition_entry_author' ) ) :
 
 		$author_string = sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+			// translators: post author link.
 			esc_attr( sprintf( esc_html__( 'View all posts by %s', 'gt-ambition' ), get_the_author() ) ),
 			esc_html( get_the_author() )
 		);
@@ -234,6 +240,22 @@ if ( ! function_exists( 'gt_ambition_entry_categories' ) ) :
 		);
 
 		return '<span class="posted-in"> ' . $posted_in . '</span>';
+	}
+endif;
+
+
+if ( ! function_exists( 'gt_ambition_entry_tags' ) ) :
+	/**
+	 * Displays the post tags on single post view
+	 */
+	function gt_ambition_entry_tags() {
+		// Get tags.
+		$tag_list = get_the_tag_list( esc_html__( 'Tags: ', 'gt-ambition' ), ', ' );
+
+		// Display tags.
+		if ( $tag_list ) :
+			echo '<p class="entry-tags">' . $tag_list . '</p>';
+		endif;
 	}
 endif;
 
