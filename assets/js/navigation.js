@@ -1,8 +1,8 @@
 /* global gtAmbitionScreenReaderText */
 /**
- * Theme functions file.
+ * Theme Navigation
  *
- * Contains handlers for navigation and widget area.
+ * @package GT Ambition
  */
 
 (function( $ ) {
