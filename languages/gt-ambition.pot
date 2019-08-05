@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GT Ambition\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2019-07-16 18:18+0200\n"
+"POT-Creation-Date: 2019-08-05 15:02+0200\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: GermanThemes <support@germanthemes.de>\n"
@@ -31,83 +31,81 @@ msgid ""
 "of the links below?"
 msgstr ""
 
-#: functions.php:37
+#: comments.php:33
+msgid "One comment"
+msgstr ""
+
+#: comments.php:36
+#, php-format
+msgid "%s comments"
+msgstr ""
+
+#: comments.php:59
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:46
 msgid "Main Navigation"
 msgstr ""
 
-#: functions.php:109
+#: functions.php:118
 msgid "Expand child menu"
 msgstr ""
 
-#: functions.php:110
+#: functions.php:119
 msgid "Collapse child menu"
 msgstr ""
 
-#: functions.php:131
+#: functions.php:145
 msgid "Footer Column 1"
 msgstr ""
 
-#: functions.php:133
+#: functions.php:147
 msgctxt "widget area description"
 msgid "Appears in the first column in footer."
 msgstr ""
 
-#: functions.php:142
+#: functions.php:156
 msgid "Footer Column 2"
 msgstr ""
 
-#: functions.php:144
+#: functions.php:158
 msgctxt "widget area description"
 msgid "Appears in the second column in footer."
 msgstr ""
 
-#: functions.php:153
+#: functions.php:167
 msgid "Footer Column 3"
 msgstr ""
 
-#: functions.php:155
+#: functions.php:169
 msgctxt "widget area description"
 msgid "Appears in the third column in footer."
 msgstr ""
 
-#: functions.php:164
+#: functions.php:178
 msgid "Footer Column 4"
 msgstr ""
 
-#: functions.php:166
+#: functions.php:180
 msgctxt "widget area description"
 msgid "Appears in the fourth column in footer."
 msgstr ""
 
-#: functions.php:175
+#: functions.php:189
 msgid "Footer Copyright"
 msgstr ""
 
-#: functions.php:177
+#: functions.php:191
 msgctxt "widget area description"
 msgid "Appears in the bottom footer line."
 msgstr ""
 
-#: functions.php:207
-msgid ""
-"Updating this theme will lose any customizations you have made. 'Cancel' to "
-"stop, 'OK' to update."
-msgstr ""
-
-#: functions.php:208
-#, php-format
-msgid ""
-"<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" "
-"title=\"%4$s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update now</"
-"a>."
-msgstr ""
-
-#: header.php:25
+#: header.php:26
 msgid "Skip to content"
 msgstr ""
 
-#: inc/admin/back-compat.php:42 inc/admin/back-compat.php:52
-#: inc/admin/back-compat.php:65
+#: inc/back-compat.php:42 inc/back-compat.php:52 inc/back-compat.php:65
 #, php-format
 msgid ""
 "%1$s requires at least WordPress version %2$s. You are running version %3$s. "
@@ -127,62 +125,15 @@ msgctxt "default font button"
 msgid "Default"
 msgstr ""
 
-#: inc/customizer/controls/license-control.php:51
-msgid "Activate License"
-msgstr ""
-
-#: inc/customizer/controls/license-control.php:52
-msgid "Deactivate License"
-msgstr ""
-
-#: inc/customizer/controls/license-control.php:53
-msgid "Loading..."
-msgstr ""
-
-#: inc/customizer/controls/license-control.php:54
-msgid "Active"
-msgstr ""
-
-#: inc/customizer/controls/license-control.php:55
-msgid "Invalid"
-msgstr ""
-
-#: inc/customizer/controls/license-control.php:56
-msgid "Expired"
-msgstr ""
-
-#: inc/customizer/controls/license-control.php:57
-msgid "Inactive"
-msgstr ""
-
-#: inc/customizer/controls/license-control.php:58
-msgid "You are receiving updates."
-msgstr ""
-
-#: inc/customizer/controls/license-control.php:59
-msgid ""
-"Please make sure you have not reached site limits and/or expiration date."
-msgstr ""
-
-#: inc/customizer/controls/license-control.php:60
-msgid ""
-"Your license has expired, renew today to continue getting updates and "
-"support!"
-msgstr ""
-
-#: inc/customizer/controls/license-control.php:81
-msgid "License Status"
-msgstr ""
-
 #: inc/customizer/controls/plugin-control.php:33
 msgid "Install Plugin"
 msgstr ""
 
-#: inc/customizer/customizer.php:36
+#: inc/customizer/customizer.php:34
 msgid "Theme Options"
 msgstr ""
 
-#: inc/customizer/customizer.php:41
+#: inc/customizer/customizer.php:39
 msgid "Background"
 msgstr ""
 
@@ -225,20 +176,6 @@ msgctxt "Color Option"
 msgid "Dark Gray"
 msgstr ""
 
-#: inc/customizer/sections/license-settings.php:19
-msgid "License"
-msgstr ""
-
-#: inc/customizer/sections/license-settings.php:20
-msgid ""
-"Please enter your license key. An active license key is necessary for "
-"automatic theme updates and support."
-msgstr ""
-
-#: inc/customizer/sections/license-settings.php:35
-msgid "License Key"
-msgstr ""
-
 #: inc/customizer/sections/theme-color-settings.php:17
 msgid "Theme Colors"
 msgstr ""
@@ -250,12 +187,12 @@ msgstr ""
 
 #: inc/customizer/sections/theme-color-settings.php:50
 msgctxt "Color Option"
-msgid "Header"
+msgid "Link Hover"
 msgstr ""
 
 #: inc/customizer/sections/theme-color-settings.php:66
 msgctxt "Color Option"
-msgid "Navigation"
+msgid "Header"
 msgstr ""
 
 #: inc/customizer/sections/theme-color-settings.php:82
@@ -386,68 +323,77 @@ msgctxt "block font size"
 msgid "Extra Large"
 msgstr ""
 
-#: inc/gutenberg.php:113
-msgid "Theme Settings"
-msgstr ""
-
-#: inc/gutenberg.php:114
-msgid "Page Options"
-msgstr ""
-
-#: inc/gutenberg.php:115
-msgid "Page Layout"
-msgstr ""
-
-#: inc/gutenberg.php:116
-msgid "Default"
-msgstr ""
-
-#: inc/gutenberg.php:117
-msgid "Full-width"
+#: inc/gutenberg.php:94
+msgctxt "block font size"
+msgid "Huge"
 msgstr ""
 
 #: inc/gutenberg.php:118
-msgid "Hide title?"
+msgid "Theme Settings"
 msgstr ""
 
 #: inc/gutenberg.php:119
+msgid "Page Options"
+msgstr ""
+
+#: inc/gutenberg.php:120
+msgid "Page Layout"
+msgstr ""
+
+#: inc/gutenberg.php:121
+msgid "Default"
+msgstr ""
+
+#: inc/gutenberg.php:122
+msgid "Full-width"
+msgstr ""
+
+#: inc/gutenberg.php:123
+msgid "Hide title?"
+msgstr ""
+
+#: inc/gutenberg.php:124
 msgid "Remove bottom margin?"
 msgstr ""
 
-#: inc/template-tags.php:110
+#: inc/template-tags.php:113
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/template-tags.php:176
+#: inc/template-tags.php:192
 #, php-format
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr ""
 
-#: inc/template-tags.php:193
+#: inc/template-tags.php:210
 #, php-format
 msgid "View all posts by %s"
 msgstr ""
 
-#: inc/template-tags.php:199
+#: inc/template-tags.php:216
 #, php-format
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
-#: inc/template-tags.php:221
+#: inc/template-tags.php:238
 #, php-format
 msgctxt "post category"
 msgid "in %s"
 msgstr ""
 
-#: inc/template-tags.php:238
+#: inc/template-tags.php:253
+msgid "Tags: "
+msgstr ""
+
+#: inc/template-tags.php:271
 msgctxt "pagination"
 msgid "Previous Posts"
 msgstr ""
 
-#: inc/template-tags.php:239
+#: inc/template-tags.php:272
 msgctxt "pagination"
 msgid "Next Posts"
 msgstr ""
