@@ -1,10 +1,10 @@
 === GT Ambition ===
-Author URI: https://germanthemes.de
-Theme URI: https://germanthemes.de/themes/gt-ambition/
+Author URI: https://germanthemes.de/en/
+Theme URI: https://germanthemes.de/en/themes/gt-ambition/
 Contributors: germanthemes
-Tags: custom-background, custom-logo, custom-header, custom-menu, grid-layout, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
-Requires at least: 5.0
-Tested up to: 5.2
+Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
+Requires at least: 5.2
+Tested up to: 5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ GT Ambition is a modern Business WordPress Theme.
 
 == Description ==
 
-GT Ambition is a modern Business WordPress Theme.
+GT Ambition is a modern Business WordPress Theme created with the new WordPress Block Editor in mind. The theme comes with Customizer options for colors and typography and a widgetized footer area. It is lightweight, GDPR-ready and works best in combination with our free GT Blocks plugin.
 
 For more information about GT Ambition please go to https://germanthemes.de/themes/gt-ambition/
 
@@ -20,8 +20,12 @@ For more information about GT Ambition please go to https://germanthemes.de/them
 
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
 2. Click on the 'Upload Theme' button to upload the ZIP-file of the theme.
-3. After the installation, navigate to Appearance > Customize and activate your license key.
-4. Go to https://germanthemes.de/docs/gt-ambition-dokumentation/ for a guide on how to use and customize this theme.
+3. Go to https://germanthemes.de/en/docs/gt-ambition-documentation/ for a guide on how to use and customize this theme.
+
+== Changelog ==
+
+= 1.0 =
+* First Release
 
 == Copyright ==
 
@@ -57,10 +61,3 @@ Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
 4. svgxuse - https://github.com/Keyamoon/svgxuse
 License: Licensed under MIT license (https://github.com/Keyamoon/svgxuse/blob/master/license)
 Copyright: 2017 IcoMoon.io
-
-Images used in screenshot.jpg
-
-Image 1: https://pixabay.com/illustrations/leave-room-interior-design-luxurious-825316/
-Image 2: https://pixabay.com/photos/modern-minimalist-bathroom-bath-3115450/
-Image 3: https://pixabay.com/illustrations/leave-room-interior-design-internal-825317/
-Image 4: https://pixabay.com/photos/chairs-conference-room-contemporary-2181980/
