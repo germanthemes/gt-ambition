@@ -73,18 +73,5 @@ gulp.task('sass:watch', function () {
 	gulp.watch( 'sass/**/*.scss', ['sass', 'editor']);
 });
 
-// Lint CSS
-gulp.task( 'lintcss', function lintCssTask() {
-  const gulpStylelint = require( 'gulp-stylelint' );
-
-  return gulp
-    .src( 'style.css' )
-    .pipe( gulpStylelint( {
-		reporters: [
-			{formatter: 'string', console: true}
-		]
-	} ) )
-});
-
 // Default Task
 gulp.task( 'default', ['minifyjs', 'cleancss'] );
