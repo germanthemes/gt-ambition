@@ -24,7 +24,13 @@ For more information about GT Ambition please go to https://germanthemes.de/them
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.2 - 2019-11-08 =
+* fixed Theme Sniffer issues
+
+= 1.0.1 - 2019-10-30 =
+* fixed position of header image on very large screens
+
+= 1.0 - 2019-08-05 =
 * First Release
 
 == Copyright ==

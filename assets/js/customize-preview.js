@@ -169,17 +169,6 @@
 	wp.customize( 'gt_ambition_theme_options[text_font]', function( value ) {
 		value.bind( function( newval ) {
 
-			// Embed Font.
-			var fontFamilyUrl = newval.split( " " ).join( "+" );
-			var googleFontPath = "https://fonts.googleapis.com/css?family=" + fontFamilyUrl + ":400,700";
-			var googleFontSource = "<link id='gt-ambition-custom-text-font' href='" + googleFontPath + "' rel='stylesheet' type='text/css'>";
-			var checkLink = $( "head" ).find( "#gt-ambition-custom-text-font" ).length;
-
-			if (checkLink > 0) {
-				$( "head" ).find( "#gt-ambition-custom-text-font" ).remove();
-			}
-			$( "head" ).append( googleFontSource );
-
 			// Set Font.
 			var systemFont = '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif';
 			var newFont = newval === 'SystemFontStack' ? systemFont : newval;
@@ -192,17 +181,6 @@
 	/* Title Font */
 	wp.customize( 'gt_ambition_theme_options[title_font]', function( value ) {
 		value.bind( function( newval ) {
-
-			// Embed Font.
-			var fontFamilyUrl = newval.split( " " ).join( "+" );
-			var googleFontPath = "https://fonts.googleapis.com/css?family=" + fontFamilyUrl + ":400,700";
-			var googleFontSource = "<link id='gt-ambition-custom-title-font' href='" + googleFontPath + "' rel='stylesheet' type='text/css'>";
-			var checkLink = $( "head" ).find( "#gt-ambition-custom-title-font" ).length;
-
-			if (checkLink > 0) {
-				$( "head" ).find( "#gt-ambition-custom-title-font" ).remove();
-			}
-			$( "head" ).append( googleFontSource );
 
 			// Set Font.
 			var systemFont = '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif';
@@ -232,17 +210,6 @@
 	/* Navi Font */
 	wp.customize( 'gt_ambition_theme_options[navi_font]', function( value ) {
 		value.bind( function( newval ) {
-
-			// Embed Font.
-			var fontFamilyUrl = newval.split( " " ).join( "+" );
-			var googleFontPath = "https://fonts.googleapis.com/css?family=" + fontFamilyUrl + ":400,700";
-			var googleFontSource = "<link id='gt-ambition-custom-navi-font' href='" + googleFontPath + "' rel='stylesheet' type='text/css'>";
-			var checkLink = $( "head" ).find( "#gt-ambition-custom-navi-font" ).length;
-
-			if (checkLink > 0) {
-				$( "head" ).find( "#gt-ambition-custom-navi-font" ).remove();
-			}
-			$( "head" ).append( googleFontSource );
 
 			// Set Font.
 			var systemFont = '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif';
