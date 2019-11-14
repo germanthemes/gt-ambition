@@ -24,6 +24,10 @@ For more information about GT Ambition please go to https://germanthemes.de/them
 
 == Changelog ==
 
+= 1.0.3 - 2019-11-14 =
+* added Theme Info section in Customizer
+* improved loading of custom fonts for typography settings in Customizer preview
+
 = 1.0.2 - 2019-11-08 =
 * fixed Theme Sniffer issues
 

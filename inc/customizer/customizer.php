@@ -11,6 +11,7 @@ require( get_template_directory() . '/inc/customizer/sanitize-functions.php' );
 // Load Custom Controls.
 require( get_template_directory() . '/inc/customizer/controls/font-control.php' );
 require( get_template_directory() . '/inc/customizer/controls/headline-control.php' );
+require( get_template_directory() . '/inc/customizer/controls/links-control.php' );
 require( get_template_directory() . '/inc/customizer/controls/plugin-control.php' );
 
 // Load Customizer Sections.
@@ -18,6 +19,7 @@ require( get_template_directory() . '/inc/customizer/sections/website-settings.p
 require( get_template_directory() . '/inc/customizer/sections/block-color-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/theme-color-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/typography-settings.php' );
+require( get_template_directory() . '/inc/customizer/sections/theme-info-settings.php' );
 
 /**
  * Registers Theme Options panel and sets up some WordPress core settings
