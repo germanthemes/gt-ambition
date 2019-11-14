@@ -169,6 +169,9 @@
 	wp.customize( 'gt_ambition_theme_options[text_font]', function( value ) {
 		value.bind( function( newval ) {
 
+			// Load Font in Customizer.
+			loadCustomFont( newval, 'text-font' );
+
 			// Set Font.
 			var systemFont = '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif';
 			var newFont = newval === 'SystemFontStack' ? systemFont : newval;
@@ -181,6 +184,9 @@
 	/* Title Font */
 	wp.customize( 'gt_ambition_theme_options[title_font]', function( value ) {
 		value.bind( function( newval ) {
+
+			// Load Font in Customizer.
+			loadCustomFont( newval, 'title-font' );
 
 			// Set Font.
 			var systemFont = '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif';
@@ -210,6 +216,9 @@
 	/* Navi Font */
 	wp.customize( 'gt_ambition_theme_options[navi_font]', function( value ) {
 		value.bind( function( newval ) {
+
+			// Load Font in Customizer.
+			loadCustomFont( newval, 'navi-font' );
 
 			// Set Font.
 			var systemFont = '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif';
@@ -242,7 +251,7 @@
 			position: 'absolute',
 			width: '1px',
 			height: '1px',
-			overflow: 'hidden'
+			overflow: 'hidden',
 		});
 	}
 
@@ -252,7 +261,7 @@
 			position: 'relative',
 			width: 'auto',
 			height: 'auto',
-			overflow: 'visible'
+			overflow: 'visible',
 		});
 	}
 
@@ -280,6 +289,31 @@
 
 	function isColorDark( hexColor ) {
 		return ( getColorBrightness( hexColor ) <= 130 );
+	}
+
+	function loadCustomFont( font, type ) {
+		if (typeof gtAmbitionFontSettings === 'undefined') {
+			return;
+		}
+
+		var defaultFonts = ['Arial', 'Arial Black', 'Courier New', 'Georgia', 'Helvetica',
+			'Impact', 'Palatino, Palatino Linotype', 'SystemFontStack', 'Tahoma',
+			'Trebuchet MS, Trebuchet', 'Times New Roman, Times', 'Verdana'];
+
+		if( defaultFonts.includes( font ) ) {
+			return;
+		}
+
+		var fontFile = font.split( " " ).join( "-" ).toLowerCase();
+		var fontFileURL = gtAmbitionFontSettings.pluginURL + fontFile + ".css";
+
+		var fontStylesheet = "<link id='gt-ambition-custom-" + type + "' href='" + fontFileURL + "' rel='stylesheet' type='text/css'>";
+		var checkLink = $( "head" ).find( "#gt-ambition-custom-" + type ).length;
+
+		if (checkLink > 0) {
+			$( "head" ).find( "#gt-ambition-custom-" + type ).remove();
+		}
+		$( "head" ).append( fontStylesheet );
 	}
 
 } )( jQuery );
