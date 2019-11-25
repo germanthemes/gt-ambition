@@ -51,6 +51,11 @@ function gt_ambition_default_options() {
 	$default_options = array(
 		'site_title'         => true,
 		'site_description'   => true,
+		'meta_date'          => true,
+		'meta_author'        => true,
+		'meta_categories'    => true,
+		'meta_tags'          => false,
+		'comments_section'   => false,
 		'primary_color'      => '#003344',
 		'secondary_color'    => '#268f97',
 		'accent_color'       => '#c9493b',

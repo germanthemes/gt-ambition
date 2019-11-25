@@ -16,6 +16,7 @@ require( get_template_directory() . '/inc/customizer/controls/plugin-control.php
 
 // Load Customizer Sections.
 require( get_template_directory() . '/inc/customizer/sections/website-settings.php' );
+require( get_template_directory() . '/inc/customizer/sections/blog-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/block-color-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/theme-color-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/typography-settings.php' );
@@ -73,6 +74,6 @@ add_action( 'customize_controls_enqueue_scripts', 'gt_ambition_customizer_contro
  * Embed CSS styles Customizer Controls.
  */
 function gt_ambition_customizer_controls_css() {
-	wp_enqueue_style( 'gt-ambition-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20190722' );
+	wp_enqueue_style( 'gt-ambition-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20191125' );
 }
 add_action( 'customize_controls_print_styles', 'gt_ambition_customizer_controls_css' );

@@ -2,7 +2,7 @@
 /**
  * Block Color Settings
  *
- * @package GT Basic
+ * @package GT Ambition
  */
 
 /**

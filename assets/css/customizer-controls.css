@@ -15,6 +15,20 @@
 	margin-bottom: 6px;
 }
 
+#customize-control-gt_ambition_theme_options-post_details,
+#customize-control-gt_ambition_theme_options-single_post {
+	margin-top: 16px;
+	margin-bottom: 0;
+}
+
+#customize-control-gt_ambition_theme_options-meta_date,
+#customize-control-gt_ambition_theme_options-meta_author,
+#customize-control-gt_ambition_theme_options-meta_categories,
+#customize-control-gt_ambition_theme_options-meta_tags,
+#customize-control-gt_ambition_theme_options-comments_section {
+	margin-bottom: 4px;
+}
+
 /* Custom Font Control */
 .customize-control-gt_ambition_custom_font {
 	margin-top: 24px;
