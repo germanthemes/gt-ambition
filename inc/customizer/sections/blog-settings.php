@@ -38,6 +38,14 @@ function gt_ambition_customize_register_blog_settings( $wp_customize ) {
 		'priority' => 10,
 	) );
 
+	// Add Partial for Number of Posts setting.
+	$wp_customize->selective_refresh->add_partial( 'gt_ambition_blog_partial', array(
+		'selector'         => '.site-content .site-main',
+		'settings'         => array( 'posts_per_page' ),
+		'render_callback'  => 'gt_ambition_customize_blog_partial',
+		'fallback_refresh' => false,
+	) );
+
 	// Add Post Details Headline.
 	$wp_customize->add_control( new GT_Ambition_Customize_Header_Control(
 		$wp_customize, 'gt_ambition_theme_options[post_details]', array(
@@ -123,3 +131,16 @@ function gt_ambition_customize_register_blog_settings( $wp_customize ) {
 	) );
 }
 add_action( 'customize_register', 'gt_ambition_customize_register_blog_settings' );
+
+
+/**
+ * Render the blog layout for the selective refresh partial.
+ */
+function gt_ambition_customize_blog_partial() {
+	while ( have_posts() ) {
+		the_post();
+		get_template_part( 'template-parts/post/content' );
+	}
+
+	gt_ambition_pagination();
+}
