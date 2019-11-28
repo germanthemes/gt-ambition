@@ -1231,6 +1231,10 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	font-weight: bold;
 }
 
+.comment-list .children {
+	list-style: none;
+}
+
 .comment-form label {
 	display: block;
 }
