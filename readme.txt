@@ -24,6 +24,12 @@ For more information about GT Ambition please go to https://germanthemes.de/them
 
 == Changelog ==
 
+= 1.1 - 2019-12-11 =
+* added Blog Settings section to Customizer
+* implemented post meta options
+* added Blog Sidebar widget area
+* improved styling of comments section
+
 = 1.0.3 - 2019-11-14 =
 * added Theme Info section in Customizer
 * improved loading of custom fonts for typography settings in Customizer preview
