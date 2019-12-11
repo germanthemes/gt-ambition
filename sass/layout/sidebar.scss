@@ -40,6 +40,13 @@
 			.site-main {
 				width: 69%;
 				padding-right: 2rem;
+
+				.entry-content > .alignwide,
+				.entry-content > .alignfull {
+					margin-left: 0;
+					margin-right: 0;
+					max-width: 100%;
+				}
 			}
 
 			.sidebar {
