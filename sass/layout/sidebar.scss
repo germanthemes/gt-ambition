@@ -43,15 +43,29 @@
 
 				.entry-content > .alignwide,
 				.entry-content > .alignfull {
-					margin-left: 0;
+					margin-left: -40px;
 					margin-right: 0;
-					max-width: 100%;
+					max-width: 840px;
 				}
 			}
 
 			.sidebar {
 				width: 31%;
 				padding-left: 2rem;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.has-blog-sidebar {
+		.site-content {
+			.site-main {
+				.entry-content > .alignwide,
+				.entry-content > .alignfull {
+					margin-left: -120px;
+					max-width: 920px;
+				}
 			}
 		}
 	}
