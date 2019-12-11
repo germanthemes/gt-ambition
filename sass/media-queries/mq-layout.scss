@@ -14,7 +14,7 @@
 	.site-content {
 		padding-top: 1.5rem;
 	}
-	
+
 	.type-post,
 	.type-page,
 	.type-attachment,
@@ -24,11 +24,12 @@
 
 	.entry-header,
 	.post-image {
-    	margin-bottom: 1.25rem;
+		margin-bottom: 1.25rem;
 	}
 }
 
 @media only screen and (min-width: 560px) {
+
 	/* Footer Widgets */
 	.footer-widgets-columns {
 		display: flex;
@@ -70,7 +71,7 @@
 	.site-footer {
 		padding-top: 2rem;
 	}
-	
+
 	.type-post,
 	.type-page,
 	.type-attachment,
@@ -80,7 +81,7 @@
 
 	.entry-header,
 	.post-image {
-    	margin-bottom: 1.5rem;
+		margin-bottom: 1.5rem;
 	}
 
 	/* Footer Widgets */
@@ -100,6 +101,7 @@
 }
 
 @media only screen and (min-width: 800px) {
+
 	/* Three Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(3),
 	.footer-widget-column:nth-child(2):nth-last-child(2),
@@ -109,6 +111,7 @@
 }
 
 @media only screen and (min-width: 960px) {
+
 	.site-header,
 	.site-content,
 	.footer-main {
@@ -125,7 +128,7 @@
 	.site-footer {
 		padding-top: 3rem;
 	}
-	
+
 	.type-post,
 	.type-page,
 	.type-attachment,
@@ -135,7 +138,7 @@
 
 	.entry-header,
 	.post-image {
-    	margin-bottom: 1.75rem;
+		margin-bottom: 1.75rem;
 	}
 
 	/* Footer Widgets */
@@ -152,7 +155,7 @@
 		padding-top: 2rem;
 		margin-bottom: 2rem;
 	}
-	
+
 	.entry-content > .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;
