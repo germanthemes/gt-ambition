@@ -159,7 +159,6 @@
 	.entry-content > .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;
-		max-width: $wideBlockWidth;
 	}
 }
 
@@ -191,7 +190,7 @@
 	.site-footer {
 		padding-top: 4rem;
 	}
-	
+
 	.type-post,
 	.type-page,
 	.type-attachment,
@@ -201,7 +200,7 @@
 
 	.entry-header,
 	.post-image {
-    	margin-bottom: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	/* Footer Widgets */
@@ -209,7 +208,7 @@
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
-	
+
 	.footer-widgets .widget {
 		margin-bottom: 4rem;
 	}
