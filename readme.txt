@@ -4,7 +4,7 @@ Theme URI: https://germanthemes.de/en/themes/gt-ambition/
 Contributors: germanthemes
 Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
 Requires at least: 5.2
-Tested up to: 5.3
+Tested up to: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,13 @@ For more information about GT Ambition please go to https://germanthemes.de/them
 3. Go to https://germanthemes.de/en/docs/gt-ambition-documentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
+
+= 1.2 - 2020-05-28 =
+* fixed alignment of nested blocks
+* fixed text color issues in Editor
+* adjusted spacing of Group block
+* improved styling for Cover block
+* improved styling of Button block
 
 = 1.1 - 2019-12-11 =
 * added Blog Settings section to Customizer
