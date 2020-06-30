@@ -96,6 +96,20 @@ function gt_ambition_gutenberg_support() {
 			'slug' => 'huge',
 		),
 	) ) );
+
+	// Register Small Buttons Block style.
+	register_block_style( 'core/buttons', array(
+		'name'         => 'gt-small',
+		'label'        => esc_html__( 'GT Small', 'gt-ambition' ),
+		'style_handle' => 'gt-ambition-stylesheet',
+	) );
+
+	// Register Large Buttons Block style.
+	register_block_style( 'core/buttons', array(
+		'name'         => 'gt-large',
+		'label'        => esc_html__( 'GT Large', 'gt-ambition' ),
+		'style_handle' => 'gt-ambition-stylesheet',
+	) );
 }
 add_action( 'after_setup_theme', 'gt_ambition_gutenberg_support' );
 
