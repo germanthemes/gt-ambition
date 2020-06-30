@@ -24,6 +24,10 @@ For more information about GT Ambition please go to https://germanthemes.de/them
 
 == Changelog ==
 
+= 1.3 - 2020-06-30 =
+* added small and large size button styles to Buttons block
+* fixed outline button style of Button block
+
 = 1.2 - 2020-05-28 =
 * fixed alignment of nested blocks
 * fixed text color issues in Editor
