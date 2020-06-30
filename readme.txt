@@ -2,9 +2,10 @@
 Author URI: https://germanthemes.de/en/
 Theme URI: https://germanthemes.de/en/themes/gt-ambition/
 Contributors: germanthemes
-Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
+Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-patterns, block-styles
 Requires at least: 5.2
 Tested up to: 5.4
+Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
