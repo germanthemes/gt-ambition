@@ -1693,6 +1693,10 @@ object {
 }
 
 /* Button Block */
+.wp-block-button {
+	color: inherit;
+}
+
 .wp-block-button.aligncenter {
 	text-align: center;
 }
@@ -1743,28 +1747,19 @@ object {
 	background-color: transparent !important;
 }
 
+.wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color),
+.wp-block-button__link.is-style-outline:not(.has-text-color) {
+	color: inherit;
+}
+
 .wp-block-button.is-style-outline .wp-block-button__link:hover,
 .wp-block-button.is-style-outline .wp-block-button__link:active {
 	color: inherit;
-	text-decoration: underline;
-}
-
-.wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color),
-.wp-block-button__link.is-style-outline:not(.has-text-color) {
-	color: #268f97;
-	color: var(--button-color);
 }
 
 .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color):hover,
 .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color):active {
-	color: #003344;
-	color: var(--button-hover-color);
-	text-decoration: none;
-}
-
-.wp-block-cover .wp-block-button.is-style-outline .wp-block-button__link,
-.wp-block-media-text .wp-block-button.is-style-outline .wp-block-button__link {
-	color: inherit;
+	text-decoration: underline;
 }
 
 /* Social Icons Block */
