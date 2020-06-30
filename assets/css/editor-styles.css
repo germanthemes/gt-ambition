@@ -567,23 +567,23 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 /* Buttons Block Style */
 .wp-block-buttons.is-style-gt-small .wp-block-button__link {
-	padding: 0.6rem 1rem;
-	font-size: 16px;
-	font-size: 1rem;
+	padding: 0.4em 0.8em;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .wp-block-buttons.is-style-gt-small .wp-block-button.is-style-outline .wp-block-button__link {
-	padding: calc(0.6rem - 2px) calc(1rem - 2px);
+	padding: calc(0.4em - 2px) calc(0.8em - 2px);
 }
 
 .wp-block-buttons.is-style-gt-large .wp-block-button__link {
-	padding: 0.9375rem 1.5625rem;
-	font-size: 19px;
-	font-size: 1.1875rem;
+	padding: 0.9em 1.8em;
+	font-size: 17px;
+	font-size: 1.0625rem;
 }
 
 .wp-block-buttons.is-style-gt-large .wp-block-button.is-style-outline .wp-block-button__link {
-	padding: calc(0.9375rem - 2px) calc(1.5625rem - 2px);
+	padding: calc(0.9em - 2px) calc(1.8em - 2px);
 }
 
 /* Cover Block */
