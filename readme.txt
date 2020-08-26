@@ -2,9 +2,9 @@
 Author URI: https://germanthemes.de/en/
 Theme URI: https://germanthemes.de/en/themes/gt-ambition/
 Contributors: germanthemes
-Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-styles
+Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-styles, block-patterns
 Requires at least: 5.2
-Tested up to: 5.4
+Tested up to: 5.5
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -24,6 +24,11 @@ For more information about GT Ambition please go to https://germanthemes.de/them
 3. Go to https://germanthemes.de/en/docs/gt-ambition-documentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
+
+= 1.4 - 2020-08-26 =
+* added block patterns
+* added default font
+* fixed font control in Customizer
 
 = 1.3 - 2020-06-30 =
 * added small and large size button styles to Buttons block
@@ -89,3 +94,7 @@ Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
 4. svgxuse - https://github.com/Keyamoon/svgxuse
 License: Licensed under MIT license (https://github.com/Keyamoon/svgxuse/blob/master/license)
 Copyright: 2017 IcoMoon.io
+
+5. Libre Baskerville Font - https://fonts.google.com/specimen/Libre+Baskerville
+License: Distributed under the terms of the Open Font License (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+Copyright: Impallari Type
