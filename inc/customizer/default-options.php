@@ -69,7 +69,7 @@ function gt_ambition_default_options() {
 		'title_hover_color'  => '#268f97',
 		'footer_color'       => '#003344',
 		'text_font'          => 'SystemFontStack',
-		'title_font'         => 'SystemFontStack',
+		'title_font'         => 'Libre Baskerville',
 		'title_is_bold'      => true,
 		'title_is_uppercase' => false,
 		'navi_font'          => 'SystemFontStack',
