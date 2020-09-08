@@ -3,7 +3,7 @@ Author URI: https://germanthemes.de/en/
 Theme URI: https://germanthemes.de/en/themes/gt-ambition/
 Contributors: germanthemes
 Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-styles, block-patterns
-Requires at least: 5.2
+Requires at least: 5.3
 Tested up to: 5.5
 Requires PHP: 5.6
 License: GPLv2 or later
@@ -24,6 +24,10 @@ For more information about GT Ambition please go to https://germanthemes.de/them
 3. Go to https://germanthemes.de/en/docs/gt-ambition-documentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
+
+= 1.4.1 - 2020-09-08 =
+* fixed undefined function error for older WordPress Core versions
+* updated back-compat file to prevent installations on outdated WP Core versions
 
 = 1.4 - 2020-08-26 =
 * added block patterns

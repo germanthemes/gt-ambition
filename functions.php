@@ -6,9 +6,9 @@
  */
 
 /**
- * GT Ambition only works in WordPress 5.2 or later.
+ * GT Ambition only works in WordPress 5.3 or later.
  */
-if ( version_compare( $GLOBALS['wp_version'], '5.2', '<' ) ) {
+if ( version_compare( $GLOBALS['wp_version'], '5.3', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 	return;
 }
