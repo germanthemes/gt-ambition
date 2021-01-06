@@ -48,15 +48,7 @@ add_action( 'customize_register', 'gt_ambition_customize_register_options' );
  * Embed JS file to make Theme Customizer preview reload changes asynchronously.
  */
 function gt_ambition_customize_preview_js() {
-	wp_enqueue_script( 'gt-ambition-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.min.js', array( 'customize-preview' ), '20191125', true );
-
-	// Load Custom Fonts from GT Local Fonts plugin in Customizer Preview if plugin is active.
-	if ( class_exists( 'GermanThemes_Local_Fonts' ) ) {
-		$font_settings = array(
-			'pluginURL' => WP_PLUGIN_URL . '/gt-local-fonts/assets/css/',
-		);
-		wp_localize_script( 'gt-ambition-customize-preview', 'gtAmbitionFontSettings', $font_settings );
-	}
+	wp_enqueue_script( 'gt-ambition-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20210106', true );
 }
 add_action( 'customize_preview_init', 'gt_ambition_customize_preview_js' );
 
