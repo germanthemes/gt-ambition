@@ -90,8 +90,3 @@
 .customize-control-gt_ambition_license_key .license-status .expired {
 	background: red;
 }
-
-/* Plugin Control Styling */
-#customize-control-gt_local_fonts_plugin {
-	margin-top: 24px;
-}
