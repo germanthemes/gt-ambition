@@ -4,7 +4,7 @@ Theme URI: https://germanthemes.de/en/themes/gt-ambition/
 Contributors: germanthemes
 Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-styles, block-patterns
 Requires at least: 5.3
-Tested up to: 5.5
+Tested up to: 5.6
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -24,6 +24,10 @@ For more information about GT Ambition please go to https://germanthemes.de/them
 3. Go to https://germanthemes.de/en/docs/gt-ambition-documentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
+
+= 1.4.2 - 2021-01-08 =
+* added WPTT Webfont loader to embed default theme fonts
+* updated typography options to use WPTT Webfont loader
 
 = 1.4.1 - 2020-09-08 =
 * fixed undefined function error for older WordPress Core versions
@@ -102,3 +106,7 @@ Copyright: 2017 IcoMoon.io
 5. Libre Baskerville Font - https://fonts.google.com/specimen/Libre+Baskerville
 License: Distributed under the terms of the Open Font License (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 Copyright: Impallari Type
+
+6. WPTT Webfont Loader - https://github.com/WPTT/webfont-loader
+License: Distributed under the terms of the MIT License (https://github.com/WPTT/webfont-loader/blob/master/LICENSE)
+Copyright: 2020 Ari Stathopoulos, WordPress Themes Team
