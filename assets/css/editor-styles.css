@@ -8,35 +8,35 @@
 # - Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #003344;
-	--secondary-color: #268f97;
-	--accent-color: #c9493b;
-	--highlight-color: #f9d26e;
-	--light-gray-color: #e4e4e4;
-	--gray-color: #848484;
-	--dark-gray-color: #242424;
-	--link-color: #268f97;
-	--link-hover-color: #003344;
-	--button-color: #268f97;
-	--button-hover-color: #003344;
-	--header-background-color: #003344;
-	--header-text-color: rgba(255, 255, 255, 0.95);
-	--header-text-hover-color: rgba(255, 255, 255, 0.5);
-	--header-border-color: rgba(255, 255, 255, 0.1);
-	--title-color: #003344;
-	--title-hover-color: #268f97;
-	--footer-background-color: #003344;
-	--footer-text-color: rgba(255, 255, 255, 0.5);
-	--footer-link-color: rgba(255, 255, 255, 0.95);
-	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
-	--footer-border-color: rgba(255, 255, 255, 0.1);
-	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	--title-font: "Libre Baskerville", arial, helvetica, sans-serif;
-	--navi-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	--title-font-weight: bold;
-	--navi-font-weight: normal;
-	--title-text-transform: none;
-	--navi-text-transform: none;
+	--gt-ambition--primary-color: #003344;
+	--gt-ambition--secondary-color: #268f97;
+	--gt-ambition--accent-color: #c9493b;
+	--gt-ambition--highlight-color: #f9d26e;
+	--gt-ambition--light-gray-color: #e4e4e4;
+	--gt-ambition--gray-color: #848484;
+	--gt-ambition--dark-gray-color: #242424;
+	--gt-ambition--link-color: #268f97;
+	--gt-ambition--link-hover-color: #003344;
+	--gt-ambition--button-color: #268f97;
+	--gt-ambition--button-hover-color: #003344;
+	--gt-ambition--header-background-color: #003344;
+	--gt-ambition--header-text-color: rgba(255, 255, 255, 0.95);
+	--gt-ambition--header-text-hover-color: rgba(255, 255, 255, 0.5);
+	--gt-ambition--header-border-color: rgba(255, 255, 255, 0.1);
+	--gt-ambition--title-color: #003344;
+	--gt-ambition--title-hover-color: #268f97;
+	--gt-ambition--footer-background-color: #003344;
+	--gt-ambition--footer-text-color: rgba(255, 255, 255, 0.5);
+	--gt-ambition--footer-link-color: rgba(255, 255, 255, 0.95);
+	--gt-ambition--footer-link-hover-color: rgba(255, 255, 255, 0.5);
+	--gt-ambition--footer-border-color: rgba(255, 255, 255, 0.1);
+	--gt-ambition--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--gt-ambition--title-font: "Libre Baskerville", arial, helvetica, sans-serif;
+	--gt-ambition--navi-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--gt-ambition--title-font-weight: bold;
+	--gt-ambition--navi-font-weight: normal;
+	--gt-ambition--title-text-transform: none;
+	--gt-ambition--navi-text-transform: none;
 }
 
 /*--------------------------------------------------------------
@@ -72,11 +72,11 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	font-size: 36px;
 	font-size: 2.25rem;
 	font-family: "Libre Baskerville", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-ambition--title-font);
 	font-weight: bold;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-ambition--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-ambition--title-text-transform);
 	line-height: 1.4;
 }
 
@@ -116,7 +116,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 /* Typography */
 .editor-styles-wrapper {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-ambition--text-font);
 	font-size: 17px;
 	font-size: 1.0625rem;
 	line-height: 1.75;
@@ -156,7 +156,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 
 .editor-styles-wrapper a {
 	color: #268f97;
-	color: var(--link-color);
+	color: var(--gt-ambition--link-color);
 }
 
 .editor-styles-wrapper hr {
@@ -189,7 +189,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 	margin-top: 1em;
 	margin-bottom: 0.75em;
 	font-family: "Libre Baskerville", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-ambition--title-font);
 	line-height: 1.4;
 }
 
@@ -332,7 +332,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 .wp-block-quote.is-style-large cite {
 	text-align: inherit;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-ambition--text-font);
 }
 
 /* Pullquote Block */
@@ -361,7 +361,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 .wp-block-pullquote blockquote cite {
 	color: #242424;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-ambition--text-font);
 	font-style: normal;
 }
 
@@ -450,13 +450,13 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
 	background-color: #003344;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-ambition--button-hover-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):active {
 	background-color: #268f97;
-	background-color: var(--button-color);
+	background-color: var(--gt-ambition--button-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link.has-text-color:hover,
@@ -718,22 +718,22 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 /* Block Text Colors */
 .has-primary-color {
 	color: #003344;
-	color: var(--primary-color);
+	color: var(--gt-ambition--primary-color);
 }
 
 .has-secondary-color {
 	color: #268f97;
-	color: var(--secondary-color);
+	color: var(--gt-ambition--secondary-color);
 }
 
 .has-accent-color {
 	color: #c9493b;
-	color: var(--accent-color);
+	color: var(--gt-ambition--accent-color);
 }
 
 .has-highlight-color {
 	color: #f9d26e;
-	color: var(--highlight-color);
+	color: var(--gt-ambition--highlight-color);
 }
 
 .has-white-color {
@@ -742,17 +742,17 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 
 .has-light-gray-color {
 	color: #e4e4e4;
-	color: var(--light-gray-color);
+	color: var(--gt-ambition--light-gray-color);
 }
 
 .has-gray-color {
 	color: #848484;
-	color: var(--gray-color);
+	color: var(--gt-ambition--gray-color);
 }
 
 .has-dark-gray-color {
 	color: #242424;
-	color: var(--dark-gray-color);
+	color: var(--gt-ambition--dark-gray-color);
 }
 
 .has-black-color {
@@ -762,22 +762,22 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 /* Block Background Colors */
 .has-primary-background-color {
 	background-color: #003344;
-	background-color: var(--primary-color);
+	background-color: var(--gt-ambition--primary-color);
 }
 
 .has-secondary-background-color {
 	background-color: #268f97;
-	background-color: var(--secondary-color);
+	background-color: var(--gt-ambition--secondary-color);
 }
 
 .has-accent-background-color {
 	background-color: #c9493b;
-	background-color: var(--accent-color);
+	background-color: var(--gt-ambition--accent-color);
 }
 
 .has-highlight-background-color {
 	background-color: #f9d26e;
-	background-color: var(--highlight-color);
+	background-color: var(--gt-ambition--highlight-color);
 }
 
 .has-white-background-color {
@@ -786,17 +786,17 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 
 .has-light-gray-background-color {
 	background-color: #e4e4e4;
-	background-color: var(--light-gray-color);
+	background-color: var(--gt-ambition--light-gray-color);
 }
 
 .has-gray-background-color {
 	background-color: #848484;
-	background-color: var(--gray-color);
+	background-color: var(--gt-ambition--gray-color);
 }
 
 .has-dark-gray-background-color {
 	background-color: #242424;
-	background-color: var(--dark-gray-color);
+	background-color: var(--gt-ambition--dark-gray-color);
 }
 
 .has-black-background-color {
