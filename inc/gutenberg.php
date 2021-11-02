@@ -230,19 +230,3 @@ function gt_ambition_gutenberg_add_admin_body_class( $classes ) {
 	return $classes;
 }
 add_filter( 'admin_body_class', 'gt_ambition_gutenberg_add_admin_body_class' );
-
-
-/**
- * Remove inline styling in Gutenberg.
- *
- * @return array $editor_settings
- */
-function gt_ambition_block_editor_settings( $editor_settings ) {
-	// Remove editor styling.
-	if ( ! current_theme_supports( 'editor-styles' ) ) {
-		$editor_settings['styles'] = '';
-	}
-
-	return $editor_settings;
-}
-add_filter( 'block_editor_settings', 'gt_ambition_block_editor_settings', 11 );
