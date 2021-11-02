@@ -4,7 +4,7 @@ Theme URI: https://germanthemes.de/en/themes/gt-ambition/
 Contributors: germanthemes
 Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-styles, block-patterns
 Requires at least: 5.3
-Tested up to: 5.6
+Tested up to: 5.9
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -24,6 +24,10 @@ For more information about GT Ambition please go to https://germanthemes.de/them
 3. Go to https://germanthemes.de/en/docs/gt-ambition-documentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
+
+= 1.4.3 - 2021-11-02 =
+* added theme slug prefix for CSS variables
+* fixed deprecated block editor function warning
 
 = 1.4.2 - 2021-01-08 =
 * added WPTT Webfont loader to embed default theme fonts
